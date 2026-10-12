@@ -26,11 +26,5 @@ This repository tracks my journey learning Rust from scratch through Project Eul
 * **The Issue:** Putting every loop and calculation inside `fn main()` made the code disorienting to review later.
 * **The Lesson:** Extract logic into small, dedicated helper functions (e.g., `sum_squares(limit)`). It keeps `main()` clean and self-documenting.
 
----
 
-## Running the Code
 
-Run any specific problem binary with Cargo:
-
-```bash
-cargo run --bin 4_sum_square.rs
