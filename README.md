@@ -1,6 +1,6 @@
 # Learning Rust with Project Euler 🦀
 
-This repository tracks my journey learning Rust from scratch through Project Euler challenges. Rather than just watching tutorials, I'm building real mental models by writing code, breaking things, and fixing logic bugs myself.
+This repository tracks my journey learning Rust from scratch through Project Euler challenges. Rather than just watching tutorials, I'm learning by writing code, breaking things, and fixing logic bugs myself.
 
 ---
 
