@@ -33,4 +33,4 @@ This repository tracks my journey learning Rust from scratch through Project Eul
 Run any specific problem binary with Cargo:
 
 ```bash
-cargo run --bin p06_sum_square_diff
+cargo run --bin 4_sum_square.rs
