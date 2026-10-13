@@ -26,5 +26,12 @@ This repository tracks my journey learning Rust from scratch through Project Eul
 * **The Issue:** Putting every loop and calculation inside `fn main()` made the code disorienting to review later.
 * **The Lesson:** Extract logic into small, dedicated helper functions (e.g., `sum_squares(limit)`). It keeps `main()` clean and self-documenting.
 
+### 6. Optimizing Search Space (Project Euler Problem 5)
+* **The Problem:** Finding the smallest number evenly divisible by all numbers from 1 to 20.
+* **The Benchmarks:**
+  * **First Draft (`step = 1`):** Ran in **6.3 seconds** (on average over 10 tests) because it checked every single integer up to 232 million.
+  * **Optimized Draft (`step = 20`):** Ran in **679.5 ms** (on average over 10 tests) by starting at 20 and stepping forward by 20, skipping the mathematically impossible candidates.
+* **The Lesson:** Always follow the classic engineering rule: *Make it work, make it right, make it fast*. Shrinking my search space made the code run faster. 
+
 
 
