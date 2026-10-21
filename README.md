@@ -34,4 +34,7 @@ This repository tracks my journey learning Rust from scratch through Project Eul
 * **The Lesson:** Always follow the classic engineering rule: *Make it work, make it right, make it fast*. Shrinking my search space made the code run faster. 
 
 
-
+### 7. Avoiding the "Snapshot" Trap (Project Euler Problem 7)
+* **The Problem:** Finding the 10,001st prime number by collecting primes in a vector using a while loop.
+* * **The Issue:** Calculating state variables (`like let check_prime_len = prime.len()`) before entering the loop created a static snapshot in memory (`0`). Because the variable was never updated inside the loop, the condition remained stuck at `0 < 10_001` forever, locking the program in an infinite loop.
+  * **The Lesson**: Variables in Rust store fixed values in memory, not live dynamic formulas. Always evaluate loop conditions directly in the while header (`while prime.len() < 10_001`) or explicitly update dependency variables inside the loop body.
